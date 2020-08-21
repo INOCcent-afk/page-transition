@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page transition</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body data-barba="wrapper">
+    <ul class="transition">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <div class="wrapper">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main data-barba="container" data-barba-namespace="home">
+        <div class="left">
+          <h1>Explore our Services</h1>
+          <a href="index.html" class="cta">Take me Home</a>
+        </div>
+        <img src="images/photo.jpg" alt="img" />
+      </main>
+    </div>
+
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"
+      integrity="sha512-JO6JyFPJupQKZf7icgZkHwuq/rAQxH7COqvEd4WdK52AtHPedwHog05T69pIelI69jVN/zZbW6TuHfH2mS8j/Q=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
